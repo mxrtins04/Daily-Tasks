@@ -17,18 +17,30 @@ public class BreakfastTest {
 	@Test
 	public void testThatItDoesntAffectAlphabetsThatAreAlreadyInUppercase() {	
 		Breakfast breakfast = new Breakfast();			
-		String result = breakfast.getSentence("M");		
+		String result = breakfast.convert("M");
+	
 		assertEquals(result, "M");			
 
 	}
 
-/*	@Test
-	public void testThatASentenceIsCollectedAndConvertedToUpperCase() {	
+	@Test
+	public void testThatItReturnsItsOutputInUppercaseEvenWhenTheInputIsInMixedCases(){
 		Breakfast breakfast = new Breakfast();			
-		String result = breakfast.convert("God is good.");		
-		assertEquals(result, "GOD IS GOOD.");				
+		String result = breakfast.convert("MarTinS");
+	
+		assertEquals(result, "MARTINS");			
 
 	}
-*/
+
+	@Test
+	public void testThatItReturnsAllItsOutputInUppercaseEvenWhenThereIsSpaceInTheString(){
+		Breakfast breakfast = new Breakfast();			
+		String result = breakfast.convert("MarTinS is really tall");
+	
+		assertEquals(result, "MARTINS IS REALLY TALL");			
+
+	}
+
+
 }
 
