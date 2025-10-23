@@ -1,0 +1,15 @@
+	This chapter basically dives deeper into classes and methods. It focused on the creation of classes and methods, it talks about each class being created becomes a new type that can be used to declare variables and creae objects.
+
+	It spoke about instance variables, what i understood by instance variables is that they are some sort of placeholders for the objects created from that class, each object has that same instance variable which has been declared in the class but each object's instance variable is unique. In the sense that the instance variable of an object a of class A is a different value from that of object b of class A.
+
+	The book also explained the difference between a private and public instance variable. For instance variables with the private access modifier cant be accesed by methods outside the class but for those with the public access modifier can be accesed by methods outside the class they are declared in.
+(Question: In what scenario would you not want the instance variable of an object be accessed by methods outside the class it originated from?)
+
+	The book touched on what a driver class, it described a driver class as the class containing the method main.
+
+	The book later explained instantiating an object. It spoke about the keyword new which is a keyword used to create a new object of a new class. It also spoke about constructors, it says a constructors is represented by the combination of the parenthesis and class name
+
+
+
+- @BeforeEach: This is an annotation that is used to designate a method that should be executed before each test method in the current test class. 
+- @AfterEach: This is an annotation that is used to designate a method that should be executed after each test method within a test class.
