@@ -24,7 +24,7 @@ class Test_task_2_functions(unittest.TestCase):
 
 		self.assertEqual(actual, expected)
 
-	def test_if_analyze_the_love_situation_gives_correct_output(self):
+def test_if_analyze_the_love_situation_gives_correct_output(self):
 		
 		actual = analyze_the_love_situation(test_list = ["odd", "even"])
 		expected = True
@@ -37,12 +37,4 @@ class Test_task_2_functions(unittest.TestCase):
 		actual = analyze_the_love_situation(test_list = ["even", "odd"])
 		expected = True
 		self.assertEqual(actual, expected)
-
-def test_if_categorize_user_input_accepts_only_int(self):
-		actual = categorize_user_input("l", "b")
-		expected = Invalid input!
-		self.assertEqual(actual, expected)
-
-		actual = categorize_user_input(1, "b")
-		expected = Invalid input!
-		self.assertEqual(actual, expected)
+		

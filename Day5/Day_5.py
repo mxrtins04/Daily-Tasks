@@ -2,19 +2,16 @@ idiot1_response = 2
 idiot2_response = 5
 
 def categorize_user_input(idiot1_response, idiot2_response):
-	if type(idiot1_response) == int and type(idiot2_response) == int:
-		if idiot1_response % 2 == 0:
-			idiot1_response = "even"
-		else: 
-			idiot1_response = "odd"
+	if idiot1_response % 2 == 0:
+		idiot1_response = "even"
+	else: 
+		idiot1_response = "odd"
 			
-		if idiot2_response % 2 == 0:
-			idiot2_response = "even"
-		else: 
-			idiot2_response = "odd"
-		return(idiot1_response, idiot2_response)
-	else:
-		return "Invalid input!"
+	if idiot2_response % 2 == 0:
+		idiot2_response = "even"
+	else: 
+		idiot2_response = "odd"
+	return(idiot1_response, idiot2_response)
 
 """def put_categorized_user_input_into_a_list(idiot1_response, idiot2_response):
 	categorize_user_input(idiot1_response, idiot2_response)

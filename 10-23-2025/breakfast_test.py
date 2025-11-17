@@ -23,3 +23,7 @@ class BreakfastTest(unittest.TestCase):
 		actual = convert_to_uppercase("andy is a golden retriever")
 		expected = "ANDY IS A GOLDEN RETRIEVER"
 		self.assertEqual(actual,expected)
+
+	def test_that_the_function_doesnt_collect_int(self):
+		
+		actual = convert_to_uppercase("
